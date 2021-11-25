@@ -4,9 +4,6 @@ import numpy as np
 from texts import Texts
 import math
 import random
-import base64
-from io import BytesIO
-import os
 from PIL import Image
 
 st.set_page_config(page_title="pySewage",layout="wide",initial_sidebar_state="expanded")
@@ -15,27 +12,6 @@ IMAGE_SUPP = Image.open('logos.png')
 
 st.sidebar.markdown('# Navegação:')
 nav = st.sidebar.radio('Ir para:', ['Home', 'Simulation'])
-
-#df = pd.read_excel('Data_MC.xlsx')
-
-'''
-def to_excel(df):
-    output = BytesIO()
-    writer = pd.ExcelWriter(output, engine='xlsxwriter')
-    df.to_excel(writer, sheet_name='Sheet1')
-    writer.save()
-    processed_data = output.getvalue()
-    return processed_data
-
-def get_table_download_link(df):
-    """Generates a link allowing the data in a given panda dataframe to be downloaded
-    in:  dataframe
-    out: href string
-    """
-    val = to_excel(df)
-    b64 = base64.b64encode(val)  # val looks like b'...'
-    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.xlsx">Download csv file</a>' # decode b'abc' => abc
-'''
 
 @st.cache
 def convert_df(df):
@@ -89,7 +65,6 @@ if nav == 'Simulation':
                                    data=csv,
                                    file_name='table.csv',
                                    mime='text/csv')
-                #st.markdown(get_table_download_link(df), unsafe_allow_html=True)
 
 
         if k_auto_manual == 'Manual':
@@ -144,8 +119,6 @@ if nav == 'Simulation':
                                    data=csv,
                                    file_name='table.csv',
                                    mime='text/csv')
-                
-                #st.markdown(get_table_download_link(df), unsafe_allow_html=True)
 
     if nav == 'About':
         gettext = Texts()
