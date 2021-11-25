@@ -9,7 +9,7 @@ from io import BytesIO
 import os
 from PIL import Image
 
-st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="expanded")
+st.set_page_config(page_title="pySewage",layout="wide",initial_sidebar_state="expanded")
 
 IMAGE_SUPP = Image.open('logos.png')
 
@@ -53,7 +53,7 @@ if nav == 'Simulation':
     file = st.file_uploader("Pick a file")
 
     if file:    
-        df = pd.read_excel(file)
+        df = pd.read_csv(file)
 
         FR = st.text_input('Type your waterwaste flow rate data (L/s)', )
 
