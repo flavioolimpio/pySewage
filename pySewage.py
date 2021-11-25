@@ -21,8 +21,8 @@ nav = st.sidebar.radio('Ir para:', ['Home', 'Simulation'])
 
 def to_excel(df):
     output = BytesIO()
-    writer = pd.ExcelWriter(output, engine='xlsxwriter')
-    df.to_excel(writer, sheet_name='Sheet1')
+    writer = pd.ExcelWriter(output, engine='csvwriter')
+    df.to_csv(writer, sheet_name='Sheet1')
     writer.save()
     processed_data = output.getvalue()
     return processed_data
@@ -34,7 +34,7 @@ def get_table_download_link(df):
     """
     val = to_excel(df)
     b64 = base64.b64encode(val)  # val looks like b'...'
-    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.xlsx">Download csv file</a>' # decode b'abc' => abc
+    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.csv">Download csv file</a>' # decode b'abc' => abc
 
 if nav == 'Home':
     gettext = Texts()
