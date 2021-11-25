@@ -5,7 +5,6 @@ from texts import Texts
 import math
 import random
 import base64
-from pyxlsb import open_workbook as open_xlsb
 from io import BytesIO
 import os
 from PIL import Image
@@ -19,7 +18,7 @@ nav = st.sidebar.radio('Ir para:', ['Home', 'Simulation'])
 
 #df = pd.read_excel('Data_MC.xlsx')
 
-
+'''
 def to_excel(df):
     output = BytesIO()
     writer = pd.ExcelWriter(output, engine='xlsxwriter')
@@ -36,6 +35,11 @@ def get_table_download_link(df):
     val = to_excel(df)
     b64 = base64.b64encode(val)  # val looks like b'...'
     return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.xlsx">Download csv file</a>' # decode b'abc' => abc
+'''
+
+@st.cache
+def convert_df(df):
+    return df.to_csv().encode('utf-8')
 
 if nav == 'Home':
     gettext = Texts()
@@ -80,7 +84,12 @@ if nav == 'Simulation':
 
                 st.table(df.head())
 
-                st.markdown(get_table_download_link(df), unsafe_allow_html=True)
+                csv = convert_df(df)
+                st.download_button(label="Download data as CSV",
+                                   data=csv,
+                                   file_name='table.csv',
+                                   mime='text/csv')
+                #st.markdown(get_table_download_link(df), unsafe_allow_html=True)
 
 
         if k_auto_manual == 'Manual':
@@ -130,7 +139,13 @@ if nav == 'Simulation':
 
                 st.table(df.head())
 
-                st.markdown(get_table_download_link(df), unsafe_allow_html=True)
+                csv = convert_df(df)
+                st.download_button(label="Download data as CSV",
+                                   data=csv,
+                                   file_name='table.csv',
+                                   mime='text/csv')
+                
+                #st.markdown(get_table_download_link(df), unsafe_allow_html=True)
 
     if nav == 'About':
         gettext = Texts()
