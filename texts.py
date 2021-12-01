@@ -13,7 +13,7 @@ class Texts:
     def text3(self):
         TEXT3 = """
         where:                                                             
-        NIP: number of infected people
+        NIP: number of infected people;                                     
         VGC: Viral genomic copies detected in wastewater (viral gene load/L);    
         FR: Wastewater flow rate (L/day);                          
         alpha: Viral load in the stool (viral gene copies/g stool);          
