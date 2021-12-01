@@ -10,8 +10,8 @@ class Texts:
 
         return TEXT1
 
-    def text3(self):
-        TEXT3 = """
+    def text2(self):
+        TEXT2 = """
         where:                                                             
         NIP: number of infected people;                                     
         VGC: Viral genomic copies detected in wastewater (viral gene load/L);    
@@ -28,6 +28,13 @@ class Texts:
         To reduce uncertainties regarding the equation's variables, 
         the web application employs Monte Carlo simulation in alpha, beta and gamma variables
 
+        ## Supporters
+        """
+
+        return TEXT2
+    
+    def text3(self):
+        TEXT3 = """
         ## Supporters
         """
 
