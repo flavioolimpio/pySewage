@@ -16,9 +16,9 @@ class Texts:
         NIP: number of infected people;                                     
         VGC: Viral genomic copies detected in wastewater (viral gene load/L);    
         FR: Wastewater flow rate (L/day);                          
-        alpha: Viral load in the stool (viral gene copies/g stool);          
-        beta: Daily production of stool per capita (g stool/capita.day);       
-        gamma: % of COVID-19 patients who shed virus in their stool.
+        α: Viral load in the stool (viral gene copies/g stool);          
+        β: Daily production of stool per capita (g stool/capita.day);       
+        γ: % of COVID-19 patients who shed virus in their stool.
         
         To start the simulation, the user must add a csv file (download template) with the viral load detected in the wastewater (VGC) and the flow rate (FR). 
         Then, for automatic simulation, the calculation will be performed according to the alpha, beta and standard gamma parameters. 
