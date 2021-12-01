@@ -12,7 +12,7 @@ IMAGE_SUPP = Image.open('logos.png')
 
 latext = r''' 
 $$ 
-NIP = \frac{VGC*FR}{\alpha*\beta*\gamma}
+NIP = \frac{VGC\cdot FR}{\alpha\cdot\beta\cdot\gamma}
 $$ 
 '''
 
