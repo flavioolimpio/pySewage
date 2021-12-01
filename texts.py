@@ -4,8 +4,8 @@ class Texts:
 
     def text1(self):
         TEXT1 = """
-        This application consists of predicting the number of people infected with Sars-Cov-2 from viral detection in wastewater. 
-        The user can simulate an automatic or manual prediction according to the equation:
+        This application consists of the prediction of people infected by SARS-CoV-2 from viral load present in wastewater samples. 
+        The user will be able to simulate an automatic or manual prediction according to the equation:
         """
 
         return TEXT1
@@ -20,10 +20,13 @@ class Texts:
         β: Daily production of stool per capita (g stool/capita.day);       
         γ: % of COVID-19 patients who shed virus in their stool.
         
-        To start the simulation, the user must add a csv file (download template) with the viral load detected in the wastewater (VGC) and the flow rate (FR). 
-        Then, for automatic simulation, the calculation will be performed according to the alpha, beta and standard gamma parameters. 
-        For manual simulation, the user must add the values of alpha, beta and gamma parameters.
-        To reduce uncertainties regarding the equation's variables, the web application employs Monte Carlo simulation on the alpha, beta and gamma variables.
+        To start the simulation, the user must add a csv file (download template) 
+        with the viral load detected in the wastewater (VGC) and the flow rate (FR). 
+        For automatic simulation, the calculation will be performed according to the 
+        standard parameters of alpha, beta, and gamma. For manual simulation, 
+        the user must add the values of alpha, beta, and gamma parameters. 
+        To reduce uncertainties regarding the equation's variables, 
+        the web application employs Monte Carlo simulation in alpha, beta and gamma variables
 
         ## Supporters
         """
