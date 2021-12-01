@@ -20,7 +20,7 @@ class Texts:
         β: Daily production of stool per capita (g stool/capita.day);       
         γ: % of COVID-19 patients who shed virus in their stool.
         
-        To start the simulation, the user must add a csv file (download template) 
+        To start the simulation, the user must add a csv file (download template below) 
         with the viral load detected in the wastewater (VGC) and the flow rate (FR). 
         For automatic simulation, the calculation will be performed according to the 
         standard parameters of alpha, beta, and gamma. For manual simulation, 
