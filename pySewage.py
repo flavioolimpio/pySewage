@@ -6,7 +6,7 @@ import math
 import random
 from PIL import Image
 
-st.set_page_config(page_title="pySewage",layout="wide",initial_sidebar_state="expanded")
+st.set_page_config(page_title="pySewage")
 
 IMAGE_SUPP = Image.open('logos.png')
 
