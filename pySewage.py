@@ -27,18 +27,25 @@ def convert_df(df):
 
 if nav == 'Home':
     gettext = Texts()
+    
     text1 = gettext.text1()
     st.markdown('# Python Sewage')
     st.markdown('{}'.format(text1), unsafe_allow_html=True)
+    
     st.write(latext)
-    gettext = Texts()
-    text3 = gettext.text3()
-    st.markdown('{}'.format(text3), unsafe_allow_html=True)
+    
+    text2 = gettext.text2()
+    st.markdown('{}'.format(text2), unsafe_allow_html=True)
+    
     csv = convert_df(filecsv)
-    st.download_button(label="Download data as CSV",
+    st.download_button(label="Download template csv",
                                    data=csv,
                                    file_name='template.csv',
                                    mime='text/csv')
+    
+    text3 = gettext.text3()
+    st.markdown('{}'.format(text3), unsafe_allow_html=True)
+    
     st.image(IMAGE_SUPP, use_column_width=True)
 
 
