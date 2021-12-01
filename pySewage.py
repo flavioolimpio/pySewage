@@ -34,8 +34,9 @@ if nav == 'Home':
     gettext = Texts()
     text3 = gettext.text3()
     st.markdown('{}'.format(text3), unsafe_allow_html=True)
+    csv = convert_df(filecsv)
     st.download_button(label="Download data as CSV",
-                                   data=filecsv,
+                                   data=csv,
                                    file_name='template.csv',
                                    mime='text/csv')
     st.image(IMAGE_SUPP, use_column_width=True)
