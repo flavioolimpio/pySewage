@@ -19,6 +19,8 @@ $$
 st.sidebar.markdown('# Navegação:')
 nav = st.sidebar.radio('Ir para:', ['Home', 'Simulation'])
 
+filecsv = pd.read_csv("template.csv")
+
 @st.cache
 def convert_df(df):
     return df.to_csv().encode('utf-8')
@@ -32,6 +34,10 @@ if nav == 'Home':
     gettext = Texts()
     text3 = gettext.text3()
     st.markdown('{}'.format(text3), unsafe_allow_html=True)
+    st.download_button(label="Download data as CSV",
+                                   data=filecsv,
+                                   file_name='template.csv',
+                                   mime='text/csv')
     st.image(IMAGE_SUPP, use_column_width=True)
 
 
