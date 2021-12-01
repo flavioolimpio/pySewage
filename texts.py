@@ -27,8 +27,6 @@ class Texts:
         the user must add the values of alpha, beta, and gamma parameters. 
         To reduce uncertainties regarding the equation's variables, 
         the web application employs Monte Carlo simulation in alpha, beta and gamma variables
-
-        ## Supporters
         """
 
         return TEXT2
