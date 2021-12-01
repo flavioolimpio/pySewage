@@ -29,7 +29,7 @@ if nav == 'Home':
     gettext = Texts()
     
     text1 = gettext.text1()
-    st.markdown('# Python Sewage')
+    st.markdown('# pySewage')
     st.markdown('{}'.format(text1), unsafe_allow_html=True)
     
     st.write(latext)
