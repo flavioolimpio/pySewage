@@ -10,6 +10,15 @@ st.set_page_config(page_title="pySewage",layout="wide",initial_sidebar_state="ex
 
 IMAGE_SUPP = Image.open('logos.png')
 
+latext = r'''
+## Latex example
+### full equation 
+$$ 
+NIP = \frac{VGC*FR}{\alpha*\beta*\gamma}
+$$ 
+'''
+
+
 st.sidebar.markdown('# Navegação:')
 nav = st.sidebar.radio('Ir para:', ['Home', 'Simulation'])
 
@@ -22,6 +31,7 @@ if nav == 'Home':
     text1 = gettext.text1()
     st.markdown('# Python Sewage')
     st.markdown('{}'.format(text1), unsafe_allow_html=True)
+    st.write(latext)
     gettext = Texts()
     text3 = gettext.text3()
     st.markdown('{}'.format(text3), unsafe_allow_html=True)
