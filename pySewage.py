@@ -74,26 +74,26 @@ if nav == 'Simulation':
             col1, col2 = st.columns(2)
 
             with col1:
-                min_alpha = st.text_input('Adicione o valor minimo do parâmetro alpha', )
+                min_alpha = st.text_input('Add the minimum alpha parameter value', )
 
             with col2:
-                max_alpha = st.text_input('Adicione o valor máximo do parâmetro alpha', )
+                max_alpha = st.text_input('Add the maximum value of the alpha parameter', )
 
             col3, col4 = st.columns(2)
 
             with col3:
-                media_beta = st.text_input('Adicione a média do parâmetro beta', )
+                media_beta = st.text_input('Add the average of the beta parameter', )
 
             with col4:
-                dp_beta = st.text_input('Adicione o desvio padrão do parâmetro beta', )
+                dp_beta = st.text_input('Add the standard deviation of the beta parameter', )
 
             col5, col6 = st.columns(2)
 
             with col5:
-                min_gamma = st.text_input('Adicione o valor minimo do parâmetro gamma', )
+                min_gamma = st.text_input('Add the minimum value of the gamma parameter', )
 
             with col6:
-                max_gamma = st.text_input('Adicione o valor máximo do parâmetro gamma', )
+                max_gamma = st.text_input('Add the maximum value of the gamma parameter', )
 
             generate = st.button("Generate")
             if generate:
