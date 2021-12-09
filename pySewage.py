@@ -16,8 +16,8 @@ NIP = \frac{VGC\cdot FR}{\alpha\cdot\beta\cdot\gamma}
 $$ 
 '''
 
-st.sidebar.markdown('# Navegação:')
-nav = st.sidebar.radio('Ir para:', ['Home', 'Simulation'])
+st.sidebar.markdown('# Navegation:')
+nav = st.sidebar.radio('Go to:', ['Home', 'Simulation'])
 
 filecsv = pd.read_csv("template.csv")
 
