@@ -9,6 +9,19 @@ class Texts:
         """
 
         return TEXT1
+        
+    def text1_1(self):
+        TEXT1_1 = """
+        <body style='text-align: justify; color: black;'>
+        <h1 style='text-align: justify; color: black;'>pySiRC website</h1>
+        <p> pySewage - a program that permits of the prediction of people infected by SARS-CoV-2.
+        <h2 style='text-align: justify; color: black;'>Citation</h2>
+        Please cite the following reference when publishing results obtained with pySiRC:<br>
+        (i) Sousa, A. R.V., et al. (2022). "pySewage": SARS-CoV-2 gene detection on wastewater samples combined with a user-friendly web application to predict the number of infected people in BrazilMidwest.</a>
+        </p>
+        </body>
+        """
+        return TEXT1_1
 
     def text2(self):
         TEXT2 = """
@@ -38,3 +51,11 @@ class Texts:
 
         return TEXT3
     
+
+    def text4(self):
+        TEXT4 = """
+        This web platform is free and open source and you are very welcome to contribute.
+        This Application has GNU GPL license. All source code can be accessed [here](https://github.com/flavioolimpio/pySewage).
+        """
+        
+        return TEXT4
