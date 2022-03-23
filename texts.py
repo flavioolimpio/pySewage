@@ -13,11 +13,11 @@ class Texts:
     def text1_1(self):
         TEXT1_1 = """
         <body style='text-align: justify; color: black;'>
-        <h1 style='text-align: justify; color: black;'>pySiRC website</h1>
+        <h1 style='text-align: justify; color: black;'>pySewage website</h1>
         <p> pySewage - a program that permits of the prediction of people infected by SARS-CoV-2.
         <h2 style='text-align: justify; color: black;'>Citation</h2>
-        Please cite the following reference when publishing results obtained with pySiRC:<br>
-        (i) Sousa, A. R.V., et al. (2022). "pySewage": SARS-CoV-2 gene detection on wastewater samples combined with a user-friendly web application to predict the number of infected people in BrazilMidwest.</a>
+        Please cite the following reference when publishing results obtained with pySewage:<br>
+        (i) Sousa, A. R.V., et al. (2022). "pySewage": SARS-CoV-2 gene detection on wastewater samples combined with a user-friendly web application to predict the number of infected people in BrazilMidwest.Submitedd</a>
         </p>
         </body>
         """
