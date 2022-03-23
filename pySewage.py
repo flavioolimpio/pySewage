@@ -5,7 +5,7 @@ from texts import Texts
 import math
 import random
 from PIL import Image
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="pySewage")
 
@@ -17,12 +17,8 @@ NIP = \frac{VGC\cdot FR}{\alpha\cdot\beta\cdot\gamma}
 $$ 
 '''
 
-#st.sidebar.markdown('# Navigation:')
-#nav = st.sidebar.radio('Go to:', ['Home', 'Simulation'])
-
-with st.sidebar:
-	nav = option_menu('Navegation:', ['HOME', 'Simulation', 'Citation', 'Contact'], 
-    icons=['house', 'water', 'journal-check',  'chat-left-text-fill'], menu_icon="cast", default_index=0)
+st.sidebar.markdown('# Navigation:')
+nav = st.sidebar.radio('Go to:', ['HOME', 'Simulation', 'Citation', 'Contact'])
         
 gettext = Texts()
 text1_1 = gettext.text1_1()
@@ -35,7 +31,6 @@ filecsv = pd.read_csv("template.csv")
 @st.cache
 def convert_df(df):
     return df.to_csv().encode('utf-8')
-
 
 def local_css(file_name):
     with open(file_name) as f:
