@@ -4,8 +4,11 @@ class Texts:
 
     def text1(self):
         TEXT1 = """
-        This application consists of the prediction of people infected by SARS-CoV-2 from viral load present in wastewater samples. 
+        <body style='text-align: justify; color: black;'>
+        <p> This application consists of the prediction of people infected by SARS-CoV-2 from viral load present in wastewater samples. 
         The user will be able to simulate an automatic or manual prediction according to the equation:
+        </p>
+        </body> 
         """
 
         return TEXT1
