@@ -25,13 +25,14 @@ class Texts:
 
     def text2(self):
         TEXT2 = """
-        where:                                                             
-        NIP: number of infected people;                                     
-        VGC: Viral genomic copies detected in wastewater (viral gene load/L);    
-        FR: Wastewater flow rate (L/day);                          
-        α: Viral load in the stool (viral gene copies/g stool);          
-        β: Daily production of stool per capita (g stool/capita.day);       
-        γ: % of COVID-19 patients who shed virus in their stool.
+        <p style='text-align: justify; color: black;'>
+        where:<br>                     
+        NIP: number of infected people;<br> 
+        VGC: Viral genomic copies detected in wastewater (viral gene load/L);<br>
+        FR: Wastewater flow rate (L/day);<br>
+        α: Viral load in the stool (viral gene copies/g stool);<br>
+        β: Daily production of stool per capita (g stool/capita.day);<br>
+        γ: % of COVID-19 patients who shed virus in their stool.<br>
         
         <p style='text-align: justify; color: black;'> To start the simulation, the user must add a csv file (download template below) 
         with the viral load detected in the wastewater (VGC) and the flow rate (FR). 
