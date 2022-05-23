@@ -17,7 +17,7 @@ class Texts:
         <p> pySewage - a program that permits of the prediction of people infected by SARS-CoV-2.
         <h2 style='text-align: justify; color: black;'>Citation</h2>
         Please cite the following reference when publishing results obtained with pySewage:<br>
-        (i) Sousa, A. R.V., et al. (2022). “pySewage”: a hybrid approach to predict the number of SARS-CoV-2 infected people from wastewater in Brazil. Environmental Science and Pollution Research, X,X, 2022</a>
+        (i) DE SOUSA, Adriano Roberto Vieira, et al. “pySewage”: a hybrid approach to predict the number of SARS-CoV-2-infected people from wastewater in Brazil. Environmental Science and Pollution Research, 2022, 1-10, <a href="https://doi.org/10.1007/s11356-022-20609-z"target="_blank">https://doi.org/10.1007/s11356-022-20609-z</a>
         </p>
         </body>
         """
