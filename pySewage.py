@@ -8,7 +8,7 @@ from streamlit_option_menu import option_menu
 from texts import Texts
 
 def convert_df(df):
-    return df.to_csv(index=False).encode('utf-8')
+    return df.to_csv(index=False, index_label=None).encode('utf-8')
 
 def parameter_inputs(selected_virus=None):
     col1, col2, col3 = st.columns(3)
@@ -178,8 +178,8 @@ def run_simulation(df, FR, RF, F, E):
     df['NIP'] = NIP
 
     st.table(df.head())
-
     csv = convert_df(df)
+    print(csv)
     st.download_button(label="Download data as CSV",
                        data=csv,
                        file_name='table.csv',
