@@ -8,7 +8,7 @@ from streamlit_option_menu import option_menu
 from texts import Texts
 
 def convert_df(df):
-    return df.to_csv().encode('utf-8')
+    return df.to_csv(index=False).encode('utf-8')
 
 def parameter_inputs(selected_virus=None):
     col1, col2, col3 = st.columns(3)
