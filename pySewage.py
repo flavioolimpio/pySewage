@@ -177,9 +177,8 @@ def run_simulation(df, FR, RF, F, E):
     NIP = (df.iloc[0:, 0].astype(float) * float(FR)) / (RF * F * E)
     df['NIP'] = NIP
 
-    st.table(df.head())
+    st.table(df)
     csv = convert_df(df)
-    print(csv)
     st.download_button(label="Download data as CSV",
                        data=csv,
                        file_name='table.csv',
